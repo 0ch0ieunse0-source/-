@@ -229,6 +229,14 @@
   .compare-row { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 640px) {
+  .case-hero { padding-top: 36px; padding-bottom: 40px; }
+  .case-hero .case-one-liner { margin-bottom: 36px; }
+  .case-back { margin-bottom: 24px; }
+  .case-section { padding: 56px 0; }
+  .figure-grid { gap: 12px; }
+}
+
 /* Result hero */
 .result-hero {
   text-align: left;
