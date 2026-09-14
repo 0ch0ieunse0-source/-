@@ -10,32 +10,34 @@
 <body>
 
 <header class="site-header">
-  <div class="wrap">
-    <a href="index.html" class="brand">Eun Seo</a>
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="assets/resume.pdf">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  <div class="nav-grid">
+    <a href="index.html" class="nav-col brand-col">Eun Seo</a>
+    <a href="#work" class="nav-col">Work</a>
+    <a href="#about" class="nav-col">About</a>
+    <a href="assets/resume.pdf" class="nav-col">Resume</a>
+    <a href="#contact" class="nav-col">Contact</a>
   </div>
 </header>
-
-<nav class="mobile-nav">
-  <a href="#work">Work</a>
-  <a href="#about">About</a>
-  <a href="assets/resume.pdf">Resume</a>
-  <a href="#contact">Contact</a>
-</nav>
 
 <main>
 
   <!-- Hero -->
   <section class="hero wrap">
+    <div class="hero-mark">E</div>
     <p class="hero-eyebrow">Choi Eun Seo — UI/UX · Product Designer</p>
-    <h1>문제를 발견하고,<br>시스템으로 구조화하고,<br>직접 구현하는 디자이너</h1>
-    <p class="hero-desc">사용자의 행동과 서비스의 목적을 함께 살피며, 기준이 없는 요구를 구체적인 화면과 구조로 옮깁니다. 병원, 뷰티, 여행, 통신, 금융 등 다양한 산업의 서비스를 다뤄왔습니다.</p>
+    <h1>문제를 발견<sup>1</sup>하고, 시스템으로 구조화<sup>2</sup>하고, 직접 구현<sup>3</sup>하는 디자이너</h1>
+
+    <ol class="hero-footnotes">
+      <li><strong>1</strong> 문제 발견 — 사용자의 행동과 서비스의 목적을 함께 살피며, 기준이 없는 요구를 구체적인 화면과 구조로 옮깁니다.</li>
+      <li><strong>2</strong> 시스템으로 구조화 — 반복되는 화면과 컴포넌트를 공통 기준으로 정리해 여러 프로젝트에 일관되게 적용합니다.</li>
+      <li><strong>3</strong> 직접 구현 — 기획부터 UI, 필요하면 퍼블리싱까지 스스로 실행해 결과로 검증합니다.</li>
+    </ol>
+
+    <div class="hero-bio">
+      <p>병원, 뷰티, 여행, 통신, 금융 등 다양한 산업의 서비스를 다뤄왔습니다. 클라이언트나 기획자가 기준이 불분명한 요구를 줄 때, 말로 정의를 좁히기보다 직접 시안을 만들어 방향을 조율하는 편입니다.</p>
+      <p>I've worked across healthcare, beauty, travel, telecom, and finance. When a client's request lacks a clear standard, I prefer building a concrete draft over debating definitions — a result moves the conversation forward faster than words.</p>
+    </div>
+
     <div class="hero-meta">
       <div><strong>1년 6개월</strong>BX 디자인 에이전시 · 프리랜서</div>
       <div><strong>13개+</strong>프로젝트 · 6개 산업군</div>
@@ -53,87 +55,53 @@
       <p class="section-note">결과물보다 판단의 과정을 먼저 보실 수 있도록, 각 프로젝트를 Problem부터 Result까지 케이스 스터디로 정리했습니다.</p>
     </div>
 
-    <div class="project-list reveal">
-      <a class="project-row" href="waveorder.html" data-preview="assets/waveorder/cover.jpg">
-        <div>
-          <div class="p-name">WaveOrder</div>
-          <div class="p-sub">디저트 전문점 예약·주문 통합 관리 플랫폼</div>
-        </div>
-        <div class="p-role">End-to-End Product Design</div>
-        <div class="p-period">2024.12 – 2026.04</div>
-        <div class="p-arrow">Case Study →</div>
+    <div class="work-grid reveal">
+      <a class="work-card" href="waveorder.html">
+        <div class="work-thumb"><img src="assets/waveorder/cover.jpg" alt="WaveOrder"></div>
+        <div class="work-name">WaveOrder</div>
+        <div class="work-tags">Reservation, Order Management, Platform</div>
       </a>
 
-      <a class="project-row" href="traveler.html" data-preview="assets/traveler/cover.jpg">
-        <div>
-          <div class="p-name">Traveler</div>
-          <div class="p-sub">베트남 여행 맞춤형 서비스 디자인</div>
-          <span class="p-tag">한국관광공사 사장상</span>
-        </div>
-        <div class="p-role">UI/UX Design</div>
-        <div class="p-period">2025.03 – 2025.12</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="traveler.html">
+        <div class="work-thumb"><img src="assets/traveler/cover.jpg" alt="Traveler"></div>
+        <div class="work-name">Traveler <span class="work-badge">Award</span></div>
+        <div class="work-tags">Travel, Vietnam, UI/UX</div>
       </a>
 
-      <a class="project-row" href="graysoft.html" data-preview="assets/graysoft/cover.jpg">
-        <div>
-          <div class="p-name">GraySoft</div>
-          <div class="p-sub">자사 브랜드 홈페이지 리뉴얼, 기획부터 Framer 구현까지 단독 진행</div>
-        </div>
-        <div class="p-role">UI/UX · Framer 구현</div>
-        <div class="p-period">2026.01 – 2026.03</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="graysoft.html">
+        <div class="work-thumb"><img src="assets/graysoft/cover.jpg" alt="GraySoft"></div>
+        <div class="work-name">GraySoft</div>
+        <div class="work-tags">Agency, Website Renewal, Framer</div>
       </a>
 
-      <a class="project-row" href="tirtir.html" data-preview="assets/tirtir/cover.jpg">
-        <div>
-          <div class="p-name">TIRTIR</div>
-          <div class="p-sub">플래그십 스토어 스킨톤 진단 서비스 디자인</div>
-        </div>
-        <div class="p-role">UI/UX Design</div>
-        <div class="p-period">2025.03 – 2026.04</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="tirtir.html">
+        <div class="work-thumb"><img src="assets/tirtir/cover.jpg" alt="TIRTIR"></div>
+        <div class="work-name">TIRTIR</div>
+        <div class="work-tags">Beauty, Flagship Store, Diagnosis</div>
       </a>
 
-      <a class="project-row" href="roamigo.html" data-preview="assets/roamigo/cover.jpg">
-        <div>
-          <div class="p-name">roAmigo</div>
-          <div class="p-sub">eSIM 구매 서비스 기획 및 디자인</div>
-        </div>
-        <div class="p-role">Planning · UI/UX Design</div>
-        <div class="p-period">2025.11 – 2026.12</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="roamigo.html">
+        <div class="work-thumb"><img src="assets/roamigo/cover.jpg" alt="roAmigo"></div>
+        <div class="work-name">roAmigo</div>
+        <div class="work-tags">Travel Tech, eSIM, Planning</div>
       </a>
 
-      <a class="project-row" href="patientcalendar.html" data-preview="assets/patientcalendar/cover.jpg">
-        <div>
-          <div class="p-name">Patient Calendar</div>
-          <div class="p-sub">치과 상담 및 후속 영업 활동 통합 솔루션 디자인</div>
-        </div>
-        <div class="p-role">Logo · UI/UX Design</div>
-        <div class="p-period">2025.08 – 2025.09</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="patientcalendar.html">
+        <div class="work-thumb"><img src="assets/patientcalendar/cover.jpg" alt="Patient Calendar"></div>
+        <div class="work-name">Patient Calendar</div>
+        <div class="work-tags">Healthcare, CRM, Dental</div>
       </a>
 
-      <a class="project-row" href="designsystem.html" data-preview="assets/designsystem/cover.jpg">
-        <div>
-          <div class="p-name">Design System</div>
-          <div class="p-sub">20개 이상의 외주 프로젝트에 적용한 사내 디자인 시스템 운영</div>
-        </div>
-        <div class="p-role">Design System</div>
-        <div class="p-period">2025.03 – 2026.04</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="designsystem.html">
+        <div class="work-thumb"><img src="assets/designsystem/cover.jpg" alt="Design System"></div>
+        <div class="work-name">Design System</div>
+        <div class="work-tags">Design System, Cross-project</div>
       </a>
 
-      <a class="project-row" href="treetree.html" data-preview="assets/treetree/cover.jpg">
-        <div>
-          <div class="p-name">TreeTree</div>
-          <div class="p-sub">내용 준비 중</div>
-          <span class="p-tag">Coming soon</span>
-        </div>
-        <div class="p-role">—</div>
-        <div class="p-period">—</div>
-        <div class="p-arrow">Case Study →</div>
+      <a class="work-card" href="treetree.html">
+        <div class="work-thumb"><img src="assets/treetree/cover.jpg" alt="TreeTree"></div>
+        <div class="work-name">TreeTree <span class="work-badge">Coming soon</span></div>
+        <div class="work-tags">내용 준비 중</div>
       </a>
     </div>
   </section>
@@ -238,8 +206,6 @@
   <span>© 2026 Choi Eun Seo</span>
   <span>UI/UX · Product Designer</span>
 </footer>
-
-<div class="hover-preview"><img src="" alt=""></div>
 
 <script src="js/main.js"></script>
 </body>
