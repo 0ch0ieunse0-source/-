@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System — Choi Eun Seo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="wrap">
+    <a href="index.html" class="brand">Eun Seo</a>
+    <nav class="nav-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="assets/resume.pdf">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="assets/resume.pdf">Resume</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+
+<main>
+
+  <section class="case-hero wrap">
+    <a href="index.html#work" class="case-back">← Work</a>
+    <p class="case-category">Cross-project Design System</p>
+    <h1>Design System</h1>
+    <p class="case-one-liner">20개 이상의 외주 프로젝트에서 반복되던 컴포넌트 제작을 Primitive · Semantic · Theme 3단 구조로 표준화해, 신규 프로젝트마다 Theme만 새로 정의하면 되도록 만들었습니다.</p>
+
+    <dl class="case-meta">
+      <div><dt>Client</dt><dd>㈜마유비 (사내 BX디자인팀)</dd></div>
+      <div><dt>Team</dt><dd>디자인 2</dd></div>
+      <div><dt>Role</dt><dd>디자인 시스템 제작 보조 및 운영 확장</dd></div>
+      <div><dt>Period</dt><dd>2025.03 – 2026.04 (재직 기간 상시 운영)</dd></div>
+      <div><dt>Tool</dt><dd>Figma</dd></div>
+    </dl>
+  </section>
+
+  <!-- 01 Background -->
+  <section class="case-section wrap">
+    <p class="case-num">01</p>
+    <h2>Background</h2>
+    <div class="case-body">
+      <p>프로젝트가 늘어날수록 프로젝트마다 컴포넌트를 새로 만드는 반복 작업, 담당 디자이너에 따라 달라지는 버튼 스타일과 톤, 컬러 토큰 없이 관리할 때 발생하는 브랜드 컬러 일괄 변경의 어려움이 쌓였습니다.</p>
+    </div>
+    <div class="case-figure wide"><img src="assets/designsystem/background.jpg" alt="디자인 시스템 도입 배경"></div>
+  </section>
+
+  <!-- 02 System -->
+  <section class="case-section wrap">
+    <p class="case-num">02</p>
+    <h2>System</h2>
+    <div class="case-body">
+      <p>Primitive → Semantic → Theme(Brand) 3단 구조로 버튼 하나까지 관리해, 신규 프로젝트가 추가될 때마다 Theme만 새로 정의하면 되도록 만들었습니다. Button · Icon · Checkbox · Radio · Switch 등 공통 컴포넌트 라이브러리와 Color · Typography · Grid · Appearance 등 공통 파운데이션 라이브러리를 나눠 관리하고, 브랜드 아이덴티티가 강한 프로젝트는 별도로 컴포넌트와 파운데이션을 재수립했습니다.</p>
+    </div>
+    <div class="case-figure wide"><img src="assets/designsystem/system.jpg" alt="Primitive, Semantic, Theme 구조"></div>
+  </section>
+
+  <!-- 03 Outcome -->
+  <section class="case-section wrap">
+    <p class="case-num">03</p>
+    <h2>Outcome</h2>
+    <p class="case-lede">여러 프로젝트를 아우르는 시스템적 사고와 팀원 피드백을 반영해 시스템을 지속적으로 발전시키는 경험을 쌓았습니다.</p>
+    <div class="stat-row">
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">프로젝트에 적용 — 공통 Foundation과 Component를 구축해 20개 이상의 프로젝트에 적용</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">30%</div>
+        <div class="stat-label">이상 단축 — 반복적인 컴포넌트 제작과 스타일 정의를 줄여 신규 화면 제작 시간 단축</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">UI 일관성</div>
+        <div class="stat-label">Theme (Brand) 기반으로 프로젝트 간 일관성을 통합 관리</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="case-nav wrap">
+    <a href="patientcalendar.html">← Patient Calendar</a>
+    <a href="treetree.html">TreeTree →</a>
+  </div>
+
+</main>
+
+<footer>
+  <span>© 2026 Choi Eun Seo</span>
+  <span>UI/UX · Product Designer</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
