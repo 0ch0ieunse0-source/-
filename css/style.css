@@ -212,7 +212,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Section shell ---------- */
 .section {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
   border-bottom: 1px solid var(--line);
 }
 .section-head {
@@ -361,7 +362,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Contact / Footer ---------- */
 .contact {
-  padding: 110px 0 80px;
+  padding-top: 110px;
+  padding-bottom: 80px;
 }
 .contact h2 {
   font-family: var(--serif);
@@ -398,7 +400,7 @@ footer {
 
 @media (max-width: 640px) {
   :root { --gutter: 6.5vw; }
-  .section { padding: 64px 0; }
+  .section { padding-top: 64px; padding-bottom: 64px; }
   .hero { padding-top: 6vh; padding-bottom: 5vh; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 12px; }
   .section-note { text-align: left; }

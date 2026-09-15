@@ -59,7 +59,8 @@
 
 /* ---------- Case section shell ---------- */
 .case-section {
-  padding: 88px 0;
+  padding-top: 88px;
+  padding-bottom: 88px;
   border-bottom: 1px solid var(--line);
 }
 .case-section:last-of-type { border-bottom: none; }
@@ -233,7 +234,7 @@
   .case-hero { padding-top: 36px; padding-bottom: 40px; }
   .case-hero .case-one-liner { margin-bottom: 36px; }
   .case-back { margin-bottom: 24px; }
-  .case-section { padding: 56px 0; }
+  .case-section { padding-top: 56px; padding-bottom: 56px; }
   .figure-grid { gap: 12px; }
 }
 
@@ -274,7 +275,8 @@
 .case-nav {
   display: flex;
   justify-content: space-between;
-  padding: 56px 0;
+  padding-top: 56px;
+  padding-bottom: 56px;
   font-size: 14px;
 }
 .case-nav a:hover { color: var(--accent); }
