@@ -180,6 +180,7 @@
 .case-figure.tall { aspect-ratio: 4/5; }
 .case-figure.wide { aspect-ratio: 21/9; }
 .case-figure.deck { aspect-ratio: 16/9; }
+.case-figure.ds { aspect-ratio: 9/4; background: var(--white); }
 .case-figure img { transition: transform .35s ease; }
 .case-figure:hover img { transform: scale(1.02); }
 .case-figcap { font-size: 12px; color: var(--ink-faint); margin-top: 10px; }
