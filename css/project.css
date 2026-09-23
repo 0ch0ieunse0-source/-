@@ -198,12 +198,30 @@
 }
 
 /* Screenshot showcase — a branded dark stage instead of a bordered box,
-   so real product screens read as a designed presentation, not a pasted photo */
+   so real product screens read as a designed presentation, not a pasted photo.
+   --case-stage / --case-glow are set per project (on <body>) to tint the
+   stage with that project's own brand color; unset ones fall back to plain ink. */
 .case-showcase {
-  background: var(--ink);
+  background: var(--case-stage, var(--ink));
   border-radius: 20px;
   padding: 56px;
   margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.case-showcase::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(75% 85% at 10% -10%, var(--case-glow, transparent), transparent 65%);
+  opacity: 0.8;
+}
+.case-showcase > * {
+  position: relative;
+  z-index: 1;
 }
 .case-showcase .case-figure {
   background: transparent;
@@ -216,8 +234,20 @@
   margin-top: 48px;
 }
 .case-showcase .case-figcap {
-  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.55);
   margin-top: 18px;
+}
+.case-showcase .case-figcap::before {
+  content: '';
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(-2px);
+  background: var(--case-glow, rgba(255, 255, 255, 0.5));
 }
 .case-showcase .case-figcap ~ .case-figure {
   margin-top: 48px;
